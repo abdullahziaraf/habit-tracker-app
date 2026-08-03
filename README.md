@@ -21,7 +21,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-App will be available at `http://localhost:8501` (only if running on the same machine as your browser)
+App will be available at `http://localhost:8501`
 
 ## Running with Docker
 
@@ -35,9 +35,7 @@ Run the container:
 docker run -d -p 8080:80 --name habit-tracker habit-tracker-app
 ```
 
-Visit `http://<host-machine-IP>:8080`
-
-> Note: if Docker is running inside a VM (as in this project's setup), use the VM's IP address, not `localhost` — for example: `http://172.20.20.2:8080`
+Visit `http://localhost:8080`
 
 ## Project Structure
 
