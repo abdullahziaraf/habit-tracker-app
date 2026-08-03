@@ -14,13 +14,14 @@ A simple habit tracking web app built with **Streamlit**, containerized with **D
 - **Docker** — containerization and deployment
 - **Git & GitHub** — version control
 
-## Running Locally 
+## Running Locally
+
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
-App will be available at `http://localhost:8501`
+App will be available at `http://localhost:8501` (only if running on the same machine as your browser)
 
 ## Running with Docker
 
@@ -34,7 +35,9 @@ Run the container:
 docker run -d -p 8080:80 --name habit-tracker habit-tracker-app
 ```
 
-Visit `http://localhost:8080` (or your machine/VM's IP address on port 8080)
+Visit `http://<host-machine-IP>:8080`
+
+> Note: if Docker is running inside a VM (as in this project's setup), use the VM's IP address, not `localhost` — for example: `http://172.20.20.2:8080`
 
 ## Project Structure
 
