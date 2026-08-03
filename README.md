@@ -14,8 +14,7 @@ A simple habit tracking web app built with **Streamlit**, containerized with **D
 - **Docker** — containerization and deployment
 - **Git & GitHub** — version control
 
-## Running Locally (without Docker)
-
+## Running Locally 
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
